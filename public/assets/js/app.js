@@ -4,6 +4,14 @@ $("#scrape").on("click", function() {
         method: "GET",
         url: "/scrape",
     }).done(function(data) {
+        $.getJSON("/articles", function(data) {
+            // For each one
+            for (var i = 0; i < data.length; i++) {
+              // Display the apropos information on the page
+              $("#panel panel-default").append(data[i].title);
+            }
+          });
+          
         console.log(data)
         window.location = "/"
     })
