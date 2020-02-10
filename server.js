@@ -40,8 +40,9 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytscrape";
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/nytscrape");
+mongoose.connect(MONGODB_URI);
 //mongoose.connect("mongodb://localhost/mongoscraper");
 var db = mongoose.connection;
 
