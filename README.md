@@ -3,6 +3,6 @@
 
  Note: To run this app, clone or download the package and install dependencies. However, there was a breaking change in the recent release of Handlebars which has caused an "access denied error" stopping the app from rendering articles. In order to fix it, you must downgrade the version of handlebars after installing all dependencies with this command: npm i -D handlebars@4.5.0
 
- 
+ Happy Scraping!!
 
 
